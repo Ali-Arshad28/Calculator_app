@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <title>Calculator</title>
+</head>
+<body>
+
+ <div id="container">
+
+<div id="calculator">
+
+
+<input id="input" type="text" readonly>
+
+<div class="row" id="row1">
+<button id="clear" class="operations" onclick="clearResult()">C</button>
+<button id="mod" class="operations" onclick="appendValue('%')">%</button>
+<button id="NA" class="operations" onclick="backSpace()"><i class="material-icons">backspace</i></button>
+<button class="operations" onclick="appendValue('/')">/</button>
+</div>
+<div class="row">
+<button class="digits" onclick="appendValue(7)">7</button>
+<button class="digits" onclick="appendValue(8)">8</button>
+<button class="digits" onclick="appendValue(9)">9</button>
+<button class="operations" onclick="appendValue('*')">x</button>
+</div>
+<div class="row">
+<button class="digits" onclick="appendValue(4)">4</button>
+<button class="digits" onclick="appendValue(5)">5</button>
+<button class="digits" onclick="appendValue(6)">6</button>
+<button class="operations" onclick="appendValue('-')"> - </button>
+</div>
+<div class="row">
+<button class="digits" onclick="appendValue(1)">1</button>
+<button class="digits" onclick="appendValue(2)">2</button>
+<button class="digits" onclick="appendValue(3)">3</button>
+<button class="operations" onclick="appendValue('+')">+</button>
+</div>
+<div class="row">
+<button class="digits" onclick="appendValue(0)">00</button>
+<button class="digits" onclick="appendValue(0)">0</button>
+<button id="equal" class="operations" onclick="calculate()">=</button>
+</div>
+
+</div>
+</div>
+
+
+<script src="function.js"></script>
+</body>
+</html>
+
